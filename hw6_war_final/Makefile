@@ -2,7 +2,8 @@ CC = g++
 OPT = -O3
 OPT = -g
 WARN = -Wall
-CFLAGS = $(WARN) $(INC) $(LIB)
+PROF = -pg
+CFLAGS = $(WARN) $(INC) $(LIB) $(PROF)
 CFLAGSGDB = $(OPT) $(WARN) $(INC) $(LIB)
 EXE_NAME= main
 
@@ -37,6 +38,7 @@ sim: hgq
 
 clean:
 	rm -f *.o main
+	rm -f *.out
 
 
 # type "make clobber" to remove all .o files (leaves hgq binary)

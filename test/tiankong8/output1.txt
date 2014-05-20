@@ -1,0 +1,5 @@
+
+set nocompatible
+"powerline{
+set guifont=PowerlineSymbols\ for\ Powerline
+set t_Co=256
